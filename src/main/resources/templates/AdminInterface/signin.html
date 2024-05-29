@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Admin Dashboard Templates - Unify Admin Template</title>
+
+		<!-- Meta -->
+		<meta name="description" content="Marketplace for Bootstrap Admin Dashboards" />
+		<meta name="author" content="Bootstrap Gallery" />
+		<link rel="canonical" href="https://www.bootstrap.gallery/">
+		<meta property="og:url" content="https://www.bootstrap.gallery">
+		<meta property="og:title" content="Admin Templates - Dashboard Templates | Bootstrap Gallery">
+		<meta property="og:description" content="Marketplace for Bootstrap Admin Dashboards">
+		<meta property="og:type" content="Website">
+		<meta property="og:site_name" content="Bootstrap Gallery">
+		<link rel="shortcut icon" href="assets/images/favicon.svg" />
+		<link rel="stylesheet" href="/User/css/animate.css">
+
+		<link rel="stylesheet" href="/User/css/owl.carousel.min.css">
+		<link rel="stylesheet" href="/User/css/owl.theme.default.min.css">
+		<link rel="stylesheet" href="/User/css/magnific-popup.css">
+
+
+		<link rel="stylesheet" href="/User/css/bootstrap-datepicker.css">
+		<link rel="stylesheet" href="/User/css/jquery.timepicker.css">
+
+		<link rel="stylesheet" href="/User/css/flaticon.css">
+		<link rel="stylesheet" href="/User/css/style.css">
+
+		<!-- *************
+			************ CSS Files *************
+		************* -->
+		<link rel="stylesheet" href="assets/fonts/bootstrap/bootstrap-icons.css" />
+		<link rel="stylesheet" href="assets/css/main.min.css" />
+	</head>
+
+	<body class="bg-white" style="background-image: url('/User/images/bg_1.jpg');">
+	<!-- Section d'en-tête Début -->
+	<header id="header" class="header-sign">
+		<div class="container" >
+			<div class="row">
+				<nav class="navbar navbar-expand-xl">
+					<div class="container-fluid">
+						<a class="navbar-brand header-logo" href="#">
+
+						</a>
+					</div>
+				</nav>
+			</div>
+		</div>
+	</header>
+	<!-- Section d'en-tête Fin -->
+	<div th:if="${param.error}" class="alert alert-danger" role="alert">
+		Invalid username or password.
+	</div>
+		<!-- Container start -->
+		<div class="container" >
+			<div class="row justify-content-center">
+				<div class="col-xl-4 col-lg-5 col-sm-6 col-12">
+					<form action="/signin" class="my-5" method="post" style="background-color: whitesmoke;" >
+						<div class="border rounded-2 p-4 mt-5">
+							<div class="login-form">
+								<a href="/signin" class="mb-4 d-flex">
+									<a class="navbar-brand" href="signin.html"><span class="flaticon-pawprint-1 mr-2"></span>Pet sitting</a>
+								</a>
+								<h5 class="fw-light mb-5">                     </h5>
+								<div class="mb-3">
+									<label class="form-label">Your Username</label>
+									<input type="text" class="form-control" placeholder="Enter your username" name="username" />
+								</div>
+								<div class="mb-3">
+									<label class="form-label">Your Password</label>
+									<input type="password" class="form-control" placeholder="Enter password" name="password"/>
+								</div>
+
+								<div class="d-grid py-3 mt-4">
+									<button type="submit" class="btn btn-lg btn-primary" >
+										Login
+									</button>
+								</div>
+								<div class="text-center pt-4">
+									<a href="/index" class="text-blue text-decoration-underline ms-2">
+										Visitor Space</a>
+								</div>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+		<!-- Container end -->
+	</body>
+
+</html>

@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Admin Dashboard Templates - Unify Admin Template</title>
+
+    <!-- Meta -->
+    <meta name="description" content="Marketplace for Bootstrap Admin Dashboards" />
+    <meta name="author" content="Bootstrap Gallery" />
+    <link rel="canonical" href="https://www.bootstrap.gallery/" />
+    <meta property="og:url" content="https://www.bootstrap.gallery" />
+    <meta property="og:title" content="Admin Templates - Dashboard Templates | Bootstrap Gallery" />
+    <meta property="og:description" content="Marketplace for Bootstrap Admin Dashboards" />
+    <meta property="og:type" content="Website" />
+    <meta property="og:site_name" content="Bootstrap Gallery" />
+    <link rel="shortcut icon" href="assets/images/favicon.svg" />
+    <link rel="stylesheet" href="/User/css/flaticon.css">
+
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="assets/fonts/bootstrap/bootstrap-icons.css" />
+    <link rel="stylesheet" href="assets/css/main.min.css" />
+
+    <!-- Vendor CSS Files -->
+    <!-- Scrollbar CSS -->
+    <link rel="stylesheet" href="assets/vendor/overlay-scroll/OverlayScrollbars.min.css" />
+</head>
+
+<body>
+
+<!-- Page wrapper start -->
+<div class="page-wrapper">
+
+    <!-- App header starts -->
+    <div class="app-header d-flex align-items-center">
+
+        <!-- Toggle buttons start -->
+        <div class="d-flex">
+            <button class="toggle-sidebar" id="toggle-sidebar">
+                <i class="bi bi-list lh-1"></i>
+            </button>
+            <button class="pin-sidebar" id="pin-sidebar">
+                <i class="bi bi-list lh-1"></i>
+            </button>
+        </div>
+        <!-- Toggle buttons end -->
+
+        <!-- App brand starts -->
+        <a class="navbar-brand" href="index.html"><span class="flaticon-pawprint-1 mr-2"></span>Pet sitting</a>
+        <!-- App brand ends -->
+
+        <!-- App header actions start -->
+        <div class="header-actions col">
+            <div class="d-lg-flex d-none">
+
+
+                <div class="dropdown border-start">
+
+                    <div class="dropdown-menu dropdown-menu-end shadow-lg">
+
+
+
+
+
+                    </div>
+                </div>
+                <div class="dropdown border-start">
+
+                    <div class="dropdown-menu dropdown-menu-end shadow-lg">
+                        <h5 class="fw-semibold px-3 py-2 text-primary">Messages</h5>
+                        <div class="dropdown-item">
+                            <div class="d-flex py-2 border-bottom">
+                                <img src="assets/images/user3.png" class="img-3x me-3 rounded-5" alt="Admin Theme" />
+                                <div class="m-0">
+                                    <h6 class="mb-1 fw-semibold">Angelia Payne</h6>
+                                    <p class="mb-1">
+                                        Membership has been ended.
+                                    </p>
+                                    <p class="small m-0 text-secondary">Today, 07:30pm</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dropdown-item">
+                            <div class="d-flex py-2 border-bottom">
+                                <img src="assets/images/user1.png" class="img-3x me-3 rounded-5" alt="Admin Theme" />
+                                <div class="m-0">
+                                    <h6 class="mb-1 fw-semibold">Clyde Fowler</h6>
+                                    <p class="mb-1">
+                                        Congratulate, James for new job.
+                                    </p>
+                                    <p class="small m-0 text-secondary">Today, 08:00pm</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dropdown-item">
+                            <div class="d-flex py-2">
+                                <img src="assets/images/user4.png" class="img-3x me-3 rounded-5" alt="Admin Theme" />
+                                <div class="m-0">
+                                    <h6 class="mb-1 fw-semibold">Sophie Michiels</h6>
+                                    <p class="mb-1">
+                                        Lewis added new schedule release.
+                                    </p>
+                                    <p class="small m-0 text-secondary">Today, 09:30pm</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-grid mx-3 my-1">
+                            <a href="javascript:void(0)" class="btn btn-primary">View all</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="dropdown ms-2">
+                <a id="userSettings" class="dropdown-toggle d-flex py-2 align-items-center text-decoration-none" href="#!"
+                   role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="assets/images/user.png" class="rounded-2 img-3x" alt="Bootstrap Gallery" />
+                    <span class="ms-2 text-truncate d-lg-block d-none">Anne Santiago</span>
+                </a>
+                <div class="dropdown-menu dropdown-menu-end shadow-lg">
+
+                    <div class="mx-3 mt-2 d-grid">
+                        <a href="login.html" class="btn btn-primary btn-sm">Logout</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- App header actions end -->
+
+</div>
+<!-- App header ends -->
+
+<!-- Main container start -->
+<div class="main-container">
+
+    <!-- Sidebar wrapper start -->
+    <nav id="sidebar" class="sidebar-wrapper">
+        <!-- Sidebar wrapper start -->
+
+
+        <!-- Sidebar profile starts -->
+        <div class="shop-profile">
+            <p class="mb-1 fw-bold text-primary">PureCare</p>
+            <p class="m-0">Admin</p>
+        </div>
+        <!-- Sidebar profile ends -->
+
+        <!-- Sidebar menu starts -->
+        <div class="sidebarMenuScroll ">
+            <ul class="sidebar-menu">
+                <li class="treeview">
+                    <a href="#!">
+                        <i class="bi-h-square"></i>
+                        <span class="menu-text">Veterinarian </span>
+                    </a>
+                    <ul class="treeview-menu">
+                        <li>
+                            <a href="accordions.html">List Vetrinarian</a>
+                        </li>
+                        <li>
+                            <a href="alerts.html">Add Veterinarian</a>
+                        </li>
+
+                    </ul>
+                </li>
+                <li class="treeview">
+                    <a href="#!">
+                        <i class="bi-terminal-dash"></i>
+                        <span class="menu-text">Animals</span>
+                    </a>
+                    <ul class="treeview-menu">
+                        <li>
+                            <a href="accordions.html">List Animals</a>
+                        </li>
+                        <li>
+                            <a href="alerts.html">Add Animals</a>
+                        </li>
+
+                    </ul>
+                </li>
+                <li class="treeview">
+                    <a href="#!">
+                        <i class="bi-bag-check"></i>
+                        <span class="menu-text">Medical Record</span>
+                    </a>
+                    <ul class="treeview-menu">
+                        <li>
+                            <a href="accordions.html">List Medical Records</a>
+                        </li>
+                        <li>
+                            <a href="alerts.html">Add Medical Record</a>
+                        </li>
+
+                    </ul>
+                </li>
+                <li class="treeview">
+                    <a href="#!">
+                        <i class="bi bi-stickies"></i>
+                        <span class="menu-text">Appointment</span>
+                    </a>
+                    <ul class="treeview-menu">
+                        <li>
+                            <a href="accordions.html">List Appointments</a>
+                        </li>
+                        <li>
+                            <a href="alerts.html">Add Appointment</a>
+                        </li>
+
+                    </ul>
+                </li>
+                <li class="treeview">
+                    <a href="#!">
+                        <i class="bi bi-stickies"></i>
+                        <span class="menu-text">Owner</span>
+                    </a>
+                    <ul class="treeview-menu">
+                        <li>
+                            <a href="accordions.html">List Owners</a>
+                        </li>
+                        <li>
+                            <a href="alerts.html">Add Owner</a>
+                        </li>
+
+                    </ul>
+                </li>
+                <li class="treeview">
+                    <a href="#!">
+                        <i class="bi bi-ui-checks-grid"></i>
+                        <span class="menu-text">Act</span>
+                    </a>
+                    <ul class="treeview-menu">
+                        <li>
+                            <a href="form-inputs.html">List Acts</a>
+                        </li>
+                        <li>
+                            <a href="form-inputs.html">Add Acts</a>
+                        </li>
+
+                    </ul>
+                </li>
+
+
+
+            </ul>
+        </div>
+    </nav>
+    <!-- Sidebar wrapper end -->
+
+    <!-- App container starts -->
+    <div class="app-container">
+
+        <!-- App hero header starts -->
+        <div class="app-hero-header d-flex align-items-start">
+            <!-- Hero header content here -->
+        </div>
+        <!-- App Hero header ends -->
+
+        <!-- App body starts -->
+        <div class="app-body">
+            <div class="row gx-3">
+                <div class="col-xxl-12">
+                    <div class="card mb-3">
+                        <div class="card-header">
+                            <h5 class="card-title">Add Veterinarian</h5>
+                        </div>
+                        <div class="card-body">
+                            <!-- Row start -->
+                            <div class="row gx-3">
+                                <div class="col-lg-3 col-sm-4 col-12">
+                                    <div class="mb-3">
+                                        <label class="form-label">Name</label>
+                                        <input type="text" class="form-control" placeholder="Enter fullname" />
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-sm-4 col-12">
+                                    <div class="mb-3">
+                                        <label class="form-label">Email</label>
+                                        <input type="email" class="form-control" placeholder="Enter email address" />
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-sm-4 col-12">
+                                    <div class="mb-3">
+                                        <label class="form-label">Phone</label>
+                                        <input type="text" class="form-control" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="Enter phone number" required/>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-sm-4 col-12">
+                                    <div class="mb-3">
+                                        <label class="form-label">Speciality</label>
+                                        <input type="text" class="form-control" placeholder="Enter speciality" />
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-3 col-sm-4 col-12">
+                                    <div class="mb-3">
+                                        <label class="form-label">Postal Code</label>
+                                        <input type="number" class="form-control" placeholder="Enter postal code" />
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-12">
+                                    <div class="mb-3">
+                                        <label class="form-label">Description</label>
+                                        <textarea class="form-control" placeholder="Enter description" rows="3"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                <div class="d-flex gap-2 justify-content-end">
+
+                                    <button type="button" class="btn btn-success">
+                                        Submit
+                                    </button>
+                                </div>
+                            </div>
+                            <!-- Row end -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- App body ends -->
+
+    </div>
+    <!-- App container ends -->
+
+</div>
+<!-- Main container ends -->
+
+</div>
+<!-- Page wrapper ends -->
+
+<!-- JavaScript Files -->
+<!-- Required jQuery first, then Bootstrap Bundle JS -->
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/bootstrap.bundle.min.js"></script>
+
+<!-- Vendor JS Files -->
+<!-- Overlay Scroll JS -->
+<script src="assets/vendor/overlay-scroll/jquery.overlayScrollbars.min.js"></script>
+<script src="assets/vendor/overlay-scroll/custom-scrollbar.js"></script>
+
+<!-- Custom JS files -->
+<script src="assets/js/custom.js"></script>
+</body>
+
+</html>
